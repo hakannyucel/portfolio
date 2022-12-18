@@ -46,7 +46,9 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  scroll-behavior: smooth;
+}
 
 @-ms-viewport {
   width: device-width; }
@@ -7527,7 +7529,7 @@ header {
   header .colorlib-navbar-brand {
     float: left; }
     header .colorlib-navbar-brand .colorlib-logo {
-      font-size: 20px;
+      font-size: .8em;
       text-transform: uppercase;
       color: #fff;
       font-weight: 400;
@@ -7536,7 +7538,7 @@ header {
       display: block;
       text-align: center;
       position: relative;
-      padding-left: 62px; }
+      padding:5px 20px;}
       header .colorlib-navbar-brand .colorlib-logo .logo-img {
         width: 50px;
         height: 50px;
@@ -8485,7 +8487,7 @@ textarea.form-control {
   padding: 10% 7%; }
   @media (min-width: 768px) {
     .block-3 .image {
-      width: 40%;
+      
       padding: 10% 7%; } }
   .block-3 .image .icon {
     width: 100px;
