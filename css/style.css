@@ -8537,7 +8537,7 @@ textarea.form-control {
   background-repeat: no-repeat; }
   @media (max-width: 767.98px) {
     .block-3 .image {
-      height: 300px; } }
+      height: 225px; } }
 
 .custom-pagination {
   width: 100%;
@@ -8790,3 +8790,69 @@ textarea.form-control {
 
   .d-flex{
     display: flex; }
+
+    .about-container{
+      padding: 3rem !important;
+    }
+
+    .mobile-menu-container{
+      display: none;
+    }
+
+    @media (max-width: 767.98px){
+      .heading-section h2{
+        font-size: 35px;
+      }
+      .over-note{
+        font-size: 15px;
+      }
+      .sub-container{
+        padding: 1.5rem !important;
+      }
+      .sub-title{
+        font-size: 28px;
+      }
+      .fs-18{
+        font-size: 18px;
+      }
+      .fs-16{
+        font-size: 16px;
+      }
+      .fs-15{
+        font-size: 15px;
+      }
+      .fs-rem1-3{
+        font-size: 1.3rem;
+      }
+      .about-container{
+        padding: 1.5rem !important;
+      }
+      .ftco-footer-social li a{
+        height: 45px;
+        width: 45px;
+      }
+      .ftco-footer-social li a span{
+        font-size: 20px;
+      }
+      .progress-wrap h4{
+        font-size: 15px;
+      }
+      .heading-section h2{
+        font-size: 27px;
+      }
+      .heading-section span{
+        font-size: 15px;
+      }
+      .block-3 .text .heading a{
+        font-size: 18px;
+      }
+      .block-3 .text .heading ~ p {
+        font-size: 15px;
+      }
+      body {
+        font-size: 15px;
+      }
+      .mobile-menu-container{
+        display: block;
+      }
+    }
