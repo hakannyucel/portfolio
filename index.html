@@ -59,32 +59,26 @@
                     <label for="navcheck" aria-hidden="true" title="menu">
                       <span class="burger">
                         <span class="bar">
-                          <span class="visuallyhidden">Menu</span>
+                          <span class="visuallyhidden" localization-key="menu">Menu</span>
                         </span>
                       </span>
                     </label>
 
                     <nav id="menu">
-                      <a href="#about">About</a>
-                      <a href="#personal-skills">Personal Skills</a>
-                      <a href="#projects">Projects</a>
-                      <a href="#contact">Contact</a>
+                      <a href="#about" localization-key="menu-about">About</a>
+                      <a href="#personal-skills" localization-key="menu-personal-skills">Personal Skills</a>
+                      <!-- <a href="#projects" localization-key="menu-projects">Projects</a> -->
+                      <a href="#contact" localization-key="menu-contact">Contact</a>
                     </nav>
                   </div>
                   <div class="desktop-menu">
                     <ul>
-                      <li><a class="colorlib-logo" href="#about">About</a></li>
-                      <li>
-                        <a class="colorlib-logo" href="#personal-skills"
-                          >Personal Skills</a
-                        >
-                      </li>
-                      <li>
+                      <li><a class="colorlib-logo" href="#about" localization-key="menu-about">About</a></li>
+                      <li><a class="colorlib-logo" href="#personal-skills" localization-key="menu-personal-skills">Personal Skills</a></li>
+                      <!-- <li>
                         <a class="colorlib-logo" href="#projects">Projects</a>
-                      </li>
-                      <li>
-                        <a class="colorlib-logo" href="#contact">Contact</a>
-                      </li>
+                      </li> -->
+                      <li><a class="colorlib-logo" href="#contact" localization-key="menu-contact">Contact</a></li>
                     </ul>
                   </div>
                 </div>
@@ -107,7 +101,7 @@
                   class="col-md-12 ftco-animate"
                   data-scrollax=" properties: { translateY: '70%' }"
                 >
-                  <p><a href="#" class="scroll">Hey! I'm</a></p>
+                  <p><a href="#" class="scroll" localization-key="intro-message">Hey! I'm</a></p>
                   <h1
                     class="mb-3"
                     data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
@@ -130,7 +124,7 @@
                   class="col-md-12 ftco-animate"
                   data-scrollax=" properties: { translateY: '70%' }"
                 >
-                  <p><a href="#" class="scroll">I'm from Turkey</a></p>
+                  <p><a href="#" class="scroll" localization-key="intro-message-second">Full Time Learner</a></p>
                   <h1
                     class="mb-3"
                     data-scrollax="properties: {translateY: '30%', opacity: 1.6}"
@@ -150,10 +144,10 @@
               <div class="col-md-2"></div>
               <div class="col-md-12 wrap ftco-animate">
                 <div class="about-desc">
-                  <h1 class="bold-text">About</h1>
+                  <h1 class="bold-text" localization-key="menu-about">About</h1>
                   <div class="about-container">
-                    <h2 class="mb-5">Hi! I'm Hakan Yücel</h2>
-                    <p>
+                    <h2 class="mb-5" localization-key="about-message">Hi! I'm Hakan Yücel</h2>
+                    <p localization-key="about-description">
                       I'm interested in programming and self-development.
                       Self-contained software developer.I like to research
                       software problems and solve them with modern technologies.
@@ -162,7 +156,7 @@
                       delivering key outcomes, working with great teams, and
                       adapting quickly to new learnings.
                     </p>
-                    <p><a href="#">Checkout my resume</a></p>
+                    <!-- <p><a href="#">Checkout my resume</a></p> -->
                     <!-- <ul class="ftco-footer-social list-unstyled mt-4">
 										<li><a href="https://twitter.com/Hakan95140150" target="_blank"><span
 													class="icon-twitter"></span></a></li>
@@ -171,7 +165,7 @@
 										<li><a href="https://www.instagram.com/hakannyucel/" target="_blank"><span
 													class="icon-instagram"></span></a></li>
 									</ul> -->
-                    <h5>Send me here!</h5>
+                    <h5 localization-key="send-me-here">Send me here!</h5>
                     <p>
                       Email:
                       <a href="mailto:info@hakanyucel.com"
@@ -187,22 +181,22 @@
             <div class="row d-flex justify-content-end mt-5">
               <div class="col-md-12 sub-container">
                 <div class="profile ftco-animate">
-                  <h2 class="mb-4 sub-title">Profile</h2>
-                  <h4 class="mb-4 fs-15">
+                  <h2 class="mb-4 sub-title" localization-key="header-profile">Profile</h2>
+                  <h4 class="mb-4 fs-15" localization-key="profile-description">
                     I'm a software developer &amp; Backend Developer from
                     Istanbul, Turkey. I aim to make a difference through my
                     creative solution.
                   </h4>
-                  <p>
+                  <p localization-key="profile-description-second">
                     I'm passionate about my work. Because I love what I do, I
                     have a steady source of motivation that drives me to do my
                     best.
                   </p>
                   <div class="row my-5">
                     <div class="col-md-6">
-                      <p><strong>Name:</strong> <span>Hakan Yücel</span></p>
+                      <p><strong localization-key="profile-name">Name:</strong> <span>Hakan Yücel</span></p>
                       <p>
-                        <strong>Address:</strong> <span>Ataşehir/Istanbul</span>
+                        <strong localization-key="profile-address">Address:</strong> <span>Ataşehir/Istanbul</span>
                       </p>
                       <!-- <p><strong>Phone:</strong><a href="tel:"><span></span></a> </p> -->
                     </div>
@@ -210,27 +204,27 @@
                 </div>
 
                 <div class="exp mt-5 ftco-animate">
-                  <h2 class="mb-4 sub-title">Experience</h2>
+                  <h2 class="mb-4 sub-title" localization-key="header-experience">Experience</h2>
                   <div class="exp-wrap py-4">
                     <div class="desc">
-                      <h4 class="fs-rem1-3">
+                      <h4 class="fs-rem1-3" localization-key="experience-dsmart-title">
                         Software Development Specialist
                         <span class="fs-16"> - D-Smart</span>
                       </h4>
-                      <p class="location">Istanbul - Turkey</p>
+                      <p class="location" localization-key="experience-dsmart-location">Istanbul - Turkey</p>
                     </div>
                     <div class="year">
-                      <p>2023 - Present</p>
+                      <p localization-key="experience-dsmart-year">2023 - Present</p>
                     </div>
                   </div>
 
                   <div class="exp-wrap py-4">
                     <div class="desc">
-                      <h4 class="fs-rem1-3">
+                      <h4 class="fs-rem1-3" localization-key="experience-ersa-title">
                         Software Developer
                         <span class="fs-16"> - Ersa Yazılım</span>
                       </h4>
-                      <p class="location">Istanbul - Turkey</p>
+                      <p class="location" localization-key="experience-ersa-location">Istanbul - Turkey</p>
                     </div>
                     <div class="year">
                       <p>2021 - 2022</p>
@@ -239,12 +233,12 @@
 
                   <div class="exp-wrap py-4">
                     <div class="desc">
-                      <h4 class="fs-rem1-3">
+                      <h4 class="fs-rem1-3" localization-key="experience-ersa-junior-title">
                         Junior Software Developer<span class="fs-16">
                           - Ersa Yazılım</span
                         >
                       </h4>
-                      <p class="location">Istanbul - Turkey</p>
+                      <p class="location" localization-key="experience-ersa-location">Istanbul - Turkey</p>
                     </div>
                     <div class="year">
                       <p>2020 - 2021</p>
@@ -253,28 +247,28 @@
 
                   <div class="exp-wrap py-4">
                     <div class="desc">
-                      <h4 class="fs-rem1-3">
+                      <h4 class="fs-rem1-3" localization-key="experience-ersa-intern-title">
                         Intern Web Software Developer
                         <span class="fs-16"> - Ersa Yazılım</span>
                       </h4>
-                      <p class="location">Istanbul - Turkey</p>
+                      <p class="location" localization-key="experience-ersa-location">Istanbul - Turkey</p>
                     </div>
                     <div class="year">
-                      <p>2 Months - 2020</p>
+                      <p localization-key="experience-ersa-intern-year">2 Months - 2020</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="exp mt-5 ftco-animate">
-                  <h2 class="mb-4 sub-title">Education</h2>
+                  <h2 class="mb-4 sub-title" localization-key="header-education">Education</h2>
                   <div class="exp-wrap py-4">
                     <div class="desc">
-                      <h4 class="fs-rem1-3">
+                      <h4 class="fs-rem1-3" localization-key="education-anadolu-title">
                         Web Design And Coding<span class="fs-16">
                           - Anadolu University</span
                         >
                       </h4>
-                      <p class="location">Eskişehir - Turkey</p>
+                      <p class="location" localization-key="education-anadolu-location">Eskişehir - Turkey</p>
                     </div>
                     <div class="year">
                       <p>2020 - 2022</p>
@@ -283,12 +277,11 @@
 
                   <div class="exp-wrap py-4">
                     <div class="desc">
-                      <h4 class="fs-rem1-3">
+                      <h4 class="fs-rem1-3" localization-key="education-medipol-title">
                         Computer Programming<span class="fs-16">
-                          - Medipol University</span
-                        >
+                          - Medipol University</span>
                       </h4>
-                      <p class="location">Istanbul - Turkey</p>
+                      <p class="location" localization-key="education-medipol-location">Istanbul - Turkey</p>
                     </div>
                     <div class="year">
                       <p>2019 - 2021</p>
@@ -304,11 +297,11 @@
             >
               <div class="col-md-6">
                 <div class="col-md-8">
-                  <h2 class="mb-4 sub-title">Soft Skills</h2>
+                  <h2 class="mb-4 sub-title" localization-key="header-soft-skills">Soft Skills</h2>
                 </div>
                 <div class="col-md-12 animate-box">
                   <div class="progress-wrap">
-                    <h4>Communication</h4>
+                    <h4 localization-key="soft-skill-communication">Communication</h4>
                     <div class="progress">
                       <div
                         class="progress-bar color-1"
@@ -328,7 +321,7 @@
                   data-animate-effect="fadeInRight"
                 >
                   <div class="progress-wrap">
-                    <h4>Time Management</h4>
+                    <h4 localization-key="soft-skill-time-management">Time Management</h4>
                     <div class="progress">
                       <div
                         class="progress-bar color-1"
@@ -345,7 +338,7 @@
                 </div>
                 <div class="col-md-12 animate-box">
                   <div class="progress-wrap">
-                    <h4>Team Work</h4>
+                    <h4 localization-key="soft-skill-team-work">Team Work</h4>
                     <div class="progress">
                       <div
                         class="progress-bar color-1"
@@ -365,7 +358,7 @@
                   data-animate-effect="fadeInRight"
                 >
                   <div class="progress-wrap">
-                    <h4>Productivity</h4>
+                    <h4 localization-key="soft-skill-productivity">Productivity</h4>
                     <div class="progress">
                       <div
                         class="progress-bar color-1"
@@ -382,7 +375,7 @@
                 </div>
                 <div class="col-md-12 animate-box">
                   <div class="progress-wrap">
-                    <h4>Multi Tasking</h4>
+                    <h4 localization-key="soft-skill-multi-tasking">Multi Tasking</h4>
                     <div class="progress">
                       <div
                         class="progress-bar color-1"
@@ -402,7 +395,7 @@
                   data-animate-effect="fadeInRight"
                 >
                   <div class="progress-wrap">
-                    <h4>Stress Management</h4>
+                    <h4 localization-key="soft-skill-stress-management">Stress Management</h4>
                     <div class="progress">
                       <div
                         class="progress-bar color-1"
@@ -420,7 +413,7 @@
               </div>
               <div class="col-md-6">
                 <div class="col-md-8">
-                  <h2 class="mb-4 sub-title">Technical Skills</h2>
+                  <h2 class="mb-4 sub-title" localization-key="header-technical-skills">Technical Skills</h2>
                 </div>
                 <div class="col-md-12 animate-box">
                   <div class="progress-wrap">
@@ -542,7 +535,7 @@
           <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
               <div class="col-md-7 text-center heading-section ftco-animate">
-                <h2 class="sub-title">My Services</h2>
+                <h2 class="sub-title" localization-key="header-my-services">My Services</h2>
               </div>
             </div>
             <div class="row">
@@ -552,9 +545,9 @@
                 >
                   <div class="icon mb-3"><span class="icon-layers"></span></div>
                   <div class="media-body">
-                    <h3 class="heading">Project Plan</h3>
-                    <h3 class="heading">Team Work</h3>
-                    <h3 class="heading">Presentation</h3>
+                    <h3 class="heading" localization-key="my-service-project-plan">Project Plan</h3>
+                    <h3 class="heading" localization-key="my-service-team-work">Team Work</h3>
+                    <h3 class="heading" localization-key="my-service-presentation">Presentation</h3>
                   </div>
                 </div>
               </div>
@@ -564,9 +557,9 @@
                 >
                   <div class="icon mb-3"><span class="icon-gears"></span></div>
                   <div class="media-body">
-                    <h3 class="heading">Server</h3>
-                    <h3 class="heading">Containerization</h3>
-                    <h3 class="heading">Web Service</h3>
+                    <h3 class="heading" localization-key="my-service-server">Server</h3>
+                    <h3 class="heading" localization-key="my-service-containerization">Containerization</h3>
+                    <h3 class="heading" localization-key="my-service-web-service">Web Service</h3>
                   </div>
                 </div>
               </div>
@@ -770,7 +763,7 @@
                   </ul>
                 </div>
                 <div class="ftco-footer-widget">
-                  <h2 class="mb-3 sub-title">Contact Me</h2>
+                  <h2 class="mb-3 sub-title" localization-key="contact-me">Contact Me</h2>
                   <p class="h3 fs-rem1-3 email">
                     <a href="mailto:info@hakanyucel.com" target="_blank"
                       >info@hakanyucel.com</a
@@ -825,6 +818,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/localization.js"></script>
 
     <script>
       $("#menu a").click(function () {
