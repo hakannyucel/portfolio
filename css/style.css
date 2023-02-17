@@ -12854,7 +12854,7 @@ nav::before {
   width: 26em;
   background: #f1f1f1;
   content: "";
-  transform: skewX(159deg) translateX(50%);
+  transform: skewX(159deg) translateX(51%);
   transform-origin: bottom left;
   will-change: transform;
   transition: transform 0.5s cubic-bezier(2, 1, 0.22, 1);
