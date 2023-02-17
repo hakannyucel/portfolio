@@ -1,5 +1,10 @@
 let translations = {};
-let defaultLocale = "tr";
+let defaultLocale = window.localStorage.getItem("lang");
+console.log(defaultLocale);
+if (defaultLocale == null) {
+    defaultLocale = "tr";
+    window.localStorage.setItem("lang", "tr");
+}
 
 const fetchTranslations = async (newLocale) => {
 
@@ -43,11 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// const switcher = document.getElementById('localization-switcher');
+var switchLanguage = function (language) {
+    if (defaultLocale !== language){
+        document.querySelector(".language-option-selected").classList.remove("language-option-selected");
 
+        document.querySelector(`#${language}`).classList.add("language-option-selected");
+
+
+        defaultLocale = language;
+        window.localStorage.setItem("lang", language);
+    }
+    
+    setLocale(language);
+}
 // switcher.onchange = (e) => {
 
-//     setLocale(e.target.value);
 
 // };
 
@@ -55,6 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 var stringToHTML = function (str) {
 	var parser = new DOMParser();
 	var doc = parser.parseFromString(str, 'text/html');
-    console.log(doc);
 	return doc.body.innerText;
 };
+
+var selectedOption = document.querySelector(`#${defaultLocale}`);
+
+selectedOption.classList.add("language-option-selected");
