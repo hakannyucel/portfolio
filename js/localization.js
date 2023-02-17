@@ -1,6 +1,6 @@
 let translations = {};
 let defaultLocale = window.localStorage.getItem("lang");
-console.log(defaultLocale);
+
 if (defaultLocale == null) {
     defaultLocale = "tr";
     window.localStorage.setItem("lang", "tr");
@@ -52,7 +52,7 @@ var switchLanguage = function (language) {
     if (defaultLocale !== language){
         document.querySelector(".language-option-selected").classList.remove("language-option-selected");
 
-        document.querySelector(`#${language}`).classList.add("language-option-selected");
+        document.querySelector(`.lang-${language}`).classList.add("language-option-selected");
 
 
         defaultLocale = language;
@@ -73,6 +73,6 @@ var stringToHTML = function (str) {
 	return doc.body.innerText;
 };
 
-var selectedOption = document.querySelector(`#${defaultLocale}`);
+var selectedOption = document.querySelector(`.lang-${defaultLocale}`);
 
 selectedOption.classList.add("language-option-selected");
