@@ -1,5 +1,6 @@
 let translations = {};
 let defaultLocale = window.localStorage.getItem("lang");
+let isMobileMenuShow = false;
 
 if (defaultLocale == null) {
     defaultLocale = "tr";
@@ -51,9 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
 var switchLanguage = function (language) {
     if (defaultLocale !== language){
         document.querySelector(".language-option-selected").classList.remove("language-option-selected");
+        document.querySelector(".language-option-selected-mobile").classList.remove("language-option-selected-mobile");
 
         document.querySelector(`.lang-${language}`).classList.add("language-option-selected");
-
+        document.querySelector(`.lang-mobile-${language}`).classList.add("language-option-selected-mobile");
 
         defaultLocale = language;
         window.localStorage.setItem("lang", language);
@@ -61,11 +63,6 @@ var switchLanguage = function (language) {
     
     setLocale(language);
 }
-// switcher.onchange = (e) => {
-
-
-// };
-
 
 var stringToHTML = function (str) {
 	var parser = new DOMParser();
@@ -74,5 +71,24 @@ var stringToHTML = function (str) {
 };
 
 var selectedOption = document.querySelector(`.lang-${defaultLocale}`);
+var selectedOptionMobile = document.querySelector(`.lang-mobile-${defaultLocale}`);
 
 selectedOption.classList.add("language-option-selected");
+
+selectedOptionMobile.classList.add("language-option-selected-mobile");
+
+var menu = document.querySelector(".burger");
+
+menu.addEventListener("click", function () {
+    isMobileMenuShow = !isMobileMenuShow;
+
+    var mobileLocalization = document.querySelector(".language-options-mobile");
+    if (mobileLocalization.classList.contains("language-options-mobile-show")){
+        mobileLocalization.classList.remove("language-options-mobile-show");
+        mobileLocalization.classList.add("language-options-mobile-hidden");
+    }
+    else{
+        mobileLocalization.classList.remove("language-options-mobile-hidden");
+        mobileLocalization.classList.add("language-options-mobile-show");
+    }
+})

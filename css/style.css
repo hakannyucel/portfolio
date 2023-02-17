@@ -12680,6 +12680,68 @@ li a {
   font-size: .5em;
 }
 
+.language-options-desktop {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  font-size: 16px;
+}
+
+.language-options-desktop .language-option {
+  cursor: pointer;
+}
+
+.language-options-desktop .language-option:hover {
+  transition: color .5s ease;
+  color: #f1f1f1;
+}
+
+.language-options-desktop .language-option-selected {
+  color: #f1f1f1;
+}
+
+.language-options-desktop .language-option-divider {
+  height: 2px;
+  width: 100%;
+  background-color: #8c8c8c;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.language-options-mobile {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  display: none;
+  color: #999;
+  z-index: 999;
+  font-size: 17px;
+  transition: all .5s ease;
+}
+
+.language-options-mobile-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-options-mobile-hidden {
+  display: none;
+}
+
+.language-option-col {
+  height: 15px;
+  width: 2px;
+  border-radius: 5px;
+  background-color: #999;
+  margin: 0 5px;
+}
+
+.language-option-selected-mobile {
+  transition: color .5s ease;
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
   .desktop-menu {
     display: none;
@@ -12900,30 +12962,3 @@ nav a:focus {
   width: 1px;
 }
 
-.language-options-desktop {
-  position: fixed;
-  right: 50px;
-  top: 50%;
-  font-size: 16px;
-}
-
-.language-options-desktop .language-option {
-  cursor: pointer;
-}
-
-.language-options-desktop .language-option:hover {
-  transition: color .5s ease;
-  color: #f1f1f1;
-}
-
-.language-options-desktop .language-option-selected {
-  color: #f1f1f1;
-}
-
-.language-options-desktop .language-option-divider {
-  height: 2px;
-  width: 100%;
-  background-color: #8c8c8c;
-  margin: 5px 0;
-  border-radius: 5px;
-}
