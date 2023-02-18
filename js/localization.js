@@ -29,7 +29,7 @@ function translatePage() {
 
         let translation = translations[key];
 
-        element.innerText = stringToHTML(translation);
+        element.innerHTML = stringToHTML(translation);
 
     });
 
@@ -67,7 +67,7 @@ var switchLanguage = function (language) {
 var stringToHTML = function (str) {
 	var parser = new DOMParser();
 	var doc = parser.parseFromString(str, 'text/html');
-	return doc.body.innerText;
+	return doc.body.innerHTML;
 };
 
 var selectedOption = document.querySelector(`.lang-${defaultLocale}`);
