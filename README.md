@@ -1,4 +1,4 @@
-[for English](https://www.google.comhttps://github.com/hakannyucel/portfolio/blob/master/README-en.md)
+[for English](https://github.com/hakannyucel/portfolio/blob/master/README-en.md)
 
 # Hakan Yücel Kişisel Website
 
